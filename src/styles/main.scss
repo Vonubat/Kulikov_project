@@ -28,7 +28,7 @@ html {
       justify-content: space-between;
       align-items: center;
       height: 17rem;
-      padding: 0 calc(100vw / 6);
+      padding: 0 33rem;
       max-width: 192rem;
 
       .logo {
@@ -84,7 +84,7 @@ html {
       position: relative;
       top: 15rem;
       width: 80rem;
-      margin: 0 calc(100vw / 6);
+      margin: 0 33rem;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -127,5 +127,61 @@ html {
   .main {
     max-width: 192rem;
     margin: 0 auto;
+
+    .about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      top: 20rem;
+      padding: 0 33rem;
+
+      .about-text-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        max-width: 62rem;
+        max-height: 60.5rem;
+
+        .about-title {
+          width: 15.5rem;
+          height: 7rem;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 5.6rem;
+          line-height: 7rem;
+          color: $main;
+        }
+
+        .about-text {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          color: $black;
+        }
+
+        .about-text-icons {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+          color: $black;
+        }
+
+        .about-text-icons img {
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      .about-img {
+        width: 51.3rem;
+        height: 76rem;
+      }
+    }
   }
 }
