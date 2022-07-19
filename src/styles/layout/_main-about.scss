@@ -1,11 +1,11 @@
 .about {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: calc(100vw / 16);
+  justify-content: space-between;
+  gap: 12rem;
   padding-top: 20rem;
-  margin: 0 auto;
-  width: 126rem;
+  margin: auto;
+  max-width: 126rem;
 
   .about-text-container {
     display: flex;
@@ -42,6 +42,6 @@
 
   .about-img {
     max-width: 51.3rem;
-    width: calc(100vw / 3.8);
+    width: calc(100vw / 3);
   }
 }

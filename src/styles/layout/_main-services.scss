@@ -1,8 +1,9 @@
 .services {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-top: 25rem;
-  margin: 0 auto;
+  margin: auto;
   gap: 8rem;
 
   .services-title {
@@ -12,6 +13,7 @@
 
   .services-container {
     display: flex;
+    justify-content: center;
     width: 126rem;
     gap: 5rem;
 
