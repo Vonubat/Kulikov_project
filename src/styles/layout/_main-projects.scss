@@ -20,6 +20,11 @@
       gap: 3rem;
       border: none;
 
+      .card-img {
+        width: 40.6rem;
+        height: 54.1rem;
+      }
+
       .card-title {
         .card-name {
           @include typography-400-v3;
@@ -43,6 +48,14 @@
           color: $black;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .projects {
+    .swiper {
+      max-width: 85rem;
     }
   }
 }

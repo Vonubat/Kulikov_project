@@ -13,9 +13,8 @@
 
   .services-container {
     display: flex;
-    justify-content: center;
-    width: 126rem;
-    gap: 5rem;
+    justify-content: space-between;
+    max-width: 126rem;
 
     .services-names {
       display: flex;
