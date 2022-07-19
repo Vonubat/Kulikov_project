@@ -1,4 +1,4 @@
-import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
+import Swiper, { Navigation, Pagination, Autoplay, Br } from 'swiper';
 import load from './../controller/loader';
 
 document.addEventListener('DOMContentLoaded', generateProjects);
@@ -94,6 +94,25 @@ async function generateProjects(event) {
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
+    },
+    breakpoints: {
+      // // when window width is >= 640px
+      // 640: {
+      //   slidesPerView: 4,
+      //   spaceBetween: 40,
+      // },
+
+      // when window width is >= 800px
+      800: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+
+      // when window width is >= 1300px
+      1300: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
     },
   });
 }
