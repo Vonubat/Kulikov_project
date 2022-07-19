@@ -3,12 +3,20 @@ import './styles/main.scss';
 import 'bootstrap';
 import Swiper from 'swiper/bundle';
 
-new Swiper('.mySwiper', {
+new Swiper('.slider', {
   slidesPerView: 3,
   spaceBetween: 30,
   freeMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,
+    type: 'progressbar',
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
 });

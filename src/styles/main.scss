@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
-@import 'swiper/css/bundle';
+@import '../../node_modules/swiper/swiper-bundle.css';
 
 $main: #cf3614;
 $main-dark: #912108;
@@ -386,35 +386,47 @@ html {
       }
 
       .swiper {
-        width: 200px;
-        height: 300px;
-      }
+        max-width: 126rem;
+        max-height: 80rem;
 
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
+        .card {
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
 
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
+          .card-title {
+            .card-name {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 28px;
+              line-height: 100%;
+              letter-spacing: 0.15em;
+              color: $black;
+              text-transform: uppercase;
+            }
 
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+            .card-type,
+            .card-square,
+            .card-price {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 22px;
+              color: $gray-alt;
+              margin-top: 0.5rem;
+              margin-right: 1.5rem;
+            }
+
+            .card-description {
+              font-style: normal;
+              font-weight: 300;
+              font-size: 18px;
+              line-height: 25px;
+              color: $black;
+              margin-top: 2rem;
+            }
+          }
+        }
       }
     }
   }
