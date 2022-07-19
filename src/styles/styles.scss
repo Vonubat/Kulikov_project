@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
-@import '../../node_modules/swiper/swiper-bundle.css';
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/navigation/navigation.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
+@import '../../node_modules/swiper/modules/autoplay/autoplay.scss';
 @import './base/normalize';
 @import './abstracts/variables';
 
