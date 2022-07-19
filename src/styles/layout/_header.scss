@@ -38,6 +38,10 @@
           width: 9rem;
           height: 2rem;
           margin: 0 5.5rem 0 0;
+
+          a:hover {
+            transform: scale(130%);
+          }
         }
 
         .contacts {
@@ -48,6 +52,14 @@
           font-weight: 600;
           font-size: 1.6rem;
           line-height: 2.2rem;
+
+          a:link,
+          a:visited,
+          a:hover,
+          a:active {
+            text-decoration: none;
+            color: $white;
+          }
         }
       }
 
