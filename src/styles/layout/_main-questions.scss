@@ -2,36 +2,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   padding-top: 22rem;
   margin: 0 auto;
   max-width: 68rem;
-  text-align: center;
   gap: 4rem;
+  color: $gray;
 
   .questions-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 56px;
-    line-height: 70px;
-    color: $gray;
+    @include typography-800-v2;
     white-space: nowrap;
   }
 
   .questions-description {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    color: $gray;
+    @include typography-400-v4;
   }
 
   .btn-questions {
     width: 31.6rem;
     height: 8.5rem;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
+    @include typography-700;
     color: $main;
   }
 

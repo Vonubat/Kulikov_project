@@ -6,10 +6,7 @@
   gap: 8rem;
 
   .projects-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 56px;
-    line-height: 70px;
+    @include typography-800-v2;
     color: $main;
   }
 
@@ -25,34 +22,25 @@
 
       .card-title {
         .card-name {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 28px;
-          line-height: 100%;
+          @include typography-400-v3;
           letter-spacing: 0.15em;
-          color: $black;
           text-transform: uppercase;
+          color: $black;
         }
 
         .card-type,
         .card-square,
         .card-price {
-          font-style: normal;
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 22px;
-          color: $gray-alt;
+          @include typography-600;
           margin-top: 0.5rem;
           margin-right: 1.5rem;
+          color: $gray-alt;
         }
 
         .card-description {
-          font-style: normal;
-          font-weight: 300;
-          font-size: 18px;
-          line-height: 25px;
-          color: $black;
+          @include typography-300;
           margin-top: 2rem;
+          color: $black;
         }
       }
     }

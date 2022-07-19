@@ -17,10 +17,7 @@
     gap: 8rem;
 
     .steps-work-title {
-      font-style: normal;
-      font-weight: 800;
-      font-size: 56px;
-      line-height: 70px;
+      @include typography-800-v2;
       color: $main;
     }
 
@@ -32,10 +29,7 @@
         display: flex;
         align-items: center;
         gap: 3rem;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 27px;
+        @include typography-400;
         color: $black;
 
         .step-number {

@@ -17,18 +17,12 @@
     .about-title {
       width: 15.5rem;
       height: 7rem;
-      font-style: normal;
-      font-weight: 800;
-      font-size: 5.6rem;
-      line-height: 7rem;
+      @include typography-800-v2;
       color: $main;
     }
 
     .about-text {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 25px;
+      @include typography-400-v2;
       color: $black;
     }
 
@@ -37,10 +31,7 @@
       justify-content: space-between;
       align-items: center;
       text-align: center;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 1.6rem;
-      line-height: 2.2rem;
+      @include typography-600;
       color: $black;
     }
 
