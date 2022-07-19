@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'swiper/scss/bundle';
 
 $main: #cf3614;
 $main-dark: #912108;
@@ -366,6 +367,54 @@ html {
             margin: 0.5rem 2.425rem;
           }
         }
+      }
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      padding-top: 25rem;
+      margin: 0 auto;
+      gap: 8rem;
+
+      .projects-title {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 70px;
+        color: $main;
+      }
+
+      .swiper {
+        width: 200px;
+        height: 300px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
   }
