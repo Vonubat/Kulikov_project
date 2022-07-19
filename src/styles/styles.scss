@@ -6,6 +6,7 @@
 @import '../../node_modules/swiper/modules/autoplay/autoplay.scss';
 @import './base/normalize';
 @import './abstracts/variables';
+@import './abstracts/mixins';
 
 html {
   scroll-behavior: smooth;

@@ -29,7 +29,7 @@
     />
     <title>Online store</title>
   </head>
-  <body class="body"></body>
+  <body class="body" id="body"></body>
   <header class="header">
     <div class="header-menu-container">
       <img src="./assets/icons/logo.svg" alt="logo" class="logo" />
@@ -58,11 +58,11 @@
           </div>
         </div>
         <div class="menu">
-          <span>Главная</span>
-          <span>О нас</span>
-          <span>Услуги и цены</span>
-          <span>Проекты</span>
-          <span>Контакты</span>
+          <a href="#body">Главная</a>
+          <a href="#about">О нас</a>
+          <a href="#services">Услуги и цены</a>
+          <a href="#projects">Проекты</a>
+          <a href="#footer">Контакты</a>
         </div>
       </nav>
     </div>
@@ -77,7 +77,7 @@
     </div>
   </header>
   <section class="main">
-    <div class="about">
+    <div class="about" id="about">
       <div class="about-text-container">
         <span class="about-title">О нас</span>
         <span class="about-text"
@@ -116,7 +116,7 @@
       <img src="./assets/about-us.png" alt="about-us" class="about-img" />
     </div>
 
-    <div class="services">
+    <div class="services" id="services">
       <span class="services-title">Услуги и цены</span>
       <div class="services-container">
         <div class="services-names">
@@ -348,7 +348,7 @@
       </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="projects">
       <div class="projects-title">Проекты</div>
       <!-- Swiper -->
       <div class="swiper slider">
@@ -455,7 +455,7 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <img src="./assets/icons/logo.svg" alt="logo" class="logo" />
     <div class="info">
       <span class="time">пн-пт 10:00–19:00 сб-вс 10:00–16:00</span>

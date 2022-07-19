@@ -26,13 +26,7 @@
     font-size: 16px;
     line-height: 22px;
 
-    a:link,
-    a:visited,
-    a:hover,
-    a:active {
-      text-decoration: none;
-      color: $white;
-    }
+    @include links-style;
 
     .messengers {
       display: flex;
