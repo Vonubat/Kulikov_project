@@ -6,10 +6,7 @@
   gap: 8rem;
 
   .services-title {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 5.6rem;
-    line-height: 7rem;
+    @include typography-800-v2;
     color: $main;
   }
 
@@ -26,16 +23,13 @@
       height: 60rem;
 
       .type {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 2rem;
-        line-height: 2.7rem;
+        @include typography-700-v2;
         color: $gray;
       }
 
       .type:hover {
-        color: $main;
         cursor: pointer;
+        color: $main;
       }
 
       .arrow-small {
@@ -53,21 +47,15 @@
         vertical-align: middle;
 
         tr {
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 22px;
+          @include typography-400-v5;
           color: $black;
 
           th {
-            background-color: $main;
-            color: $white;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 1.8rem;
-            line-height: 2.5rem;
+            @include typography-700;
             padding: 1.5rem 4rem;
             white-space: nowrap;
+            background-color: $main;
+            color: $white;
           }
 
           td {
