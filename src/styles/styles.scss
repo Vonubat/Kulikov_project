@@ -22,6 +22,6 @@ html {
   @import './layout/footer';
 }
 
-.active {
-  color: $main;
+.active-item {
+  color: $main !important;
 }

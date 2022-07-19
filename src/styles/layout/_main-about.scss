@@ -1,10 +1,11 @@
 .about {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: calc(100vw / 16);
   padding-top: 20rem;
   margin: 0 auto;
-  max-width: 126rem;
+  width: 126rem;
 
   .about-text-container {
     display: flex;

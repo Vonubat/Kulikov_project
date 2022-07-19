@@ -8,10 +8,13 @@ for (const type of types) {
 }
 
 async function generateServices(event) {
+  console.log(event);
   const services = await load('./../../db/services.json');
   let currentType = [];
   if (event.type === 'DOMContentLoaded') {
     currentType = services.demolition;
+  } else if (event.target.classList.contains('arrow-small')) {
+    currentType = services[event.target.parentElement.id];
   } else {
     currentType = services[event.target.id];
   }
@@ -25,6 +28,7 @@ async function generateServices(event) {
     }
   }
 
+  const tBody = document.createElement('tbody');
   const trHeading = document.createElement('tr');
   const thName = document.createElement('th');
   thName.innerHTML = 'Виды работ';
@@ -33,7 +37,8 @@ async function generateServices(event) {
   const thPrice = document.createElement('th');
   thPrice.innerHTML = 'Цена, BYN, от';
 
-  table.append(trHeading);
+  table.append(tBody);
+  tBody.append(trHeading);
   trHeading.append(thName, thUnit, thPrice);
 
   for (let i = 0; i < currentType.length; i++) {
@@ -43,11 +48,11 @@ async function generateServices(event) {
     const thCurrentTypeUnit = document.createElement('td');
     thCurrentTypeUnit.innerHTML = `${currentType[i].unit}`;
     const thCurrentTypePrice = document.createElement('td');
-    thCurrentTypePrice.innerHTML = `${currentType[i].price}`;
+    thCurrentTypePrice.innerHTML = `${Math.ceil(
+      currentType[i].price * currency.Cur_OfficialRate
+    )}`;
 
-    table.append(trNew);
+    tBody.append(trNew);
     trNew.append(thCurrentTypeName, thCurrentTypeUnit, thCurrentTypePrice);
   }
-
-  console.log(currency);
 }
