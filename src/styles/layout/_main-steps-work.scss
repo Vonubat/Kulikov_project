@@ -1,0 +1,54 @@
+.steps-work {
+  display: flex;
+  align-items: center;
+  gap: calc(100vw / 16);
+  padding-top: 38rem;
+  margin: 0 auto;
+  max-width: 126rem;
+
+  .steps-work-img {
+    max-width: 51.3rem;
+    width: calc(100vw / 3.8);
+  }
+
+  .steps-work-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+
+    .steps-work-title {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 56px;
+      line-height: 70px;
+      color: $main;
+    }
+
+    .steps-work-description {
+      display: flex;
+      flex-direction: column;
+
+      .step {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: $black;
+
+        .step-number {
+          width: 5rem;
+          height: 5rem;
+        }
+      }
+
+      .line {
+        width: 0.15rem;
+        height: 2.5rem;
+        margin: 0.5rem 2.425rem;
+      }
+    }
+  }
+}

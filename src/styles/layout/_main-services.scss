@@ -1,0 +1,82 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25rem;
+  margin: 0 auto;
+  gap: 8rem;
+
+  .services-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 5.6rem;
+    line-height: 7rem;
+    color: $main;
+  }
+
+  .services-container {
+    display: flex;
+    gap: 2rem;
+
+    .services-names {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      width: 30rem;
+      height: 44.7rem;
+
+      .type {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.7rem;
+        color: $gray;
+      }
+
+      .type:hover {
+        color: $main;
+        cursor: pointer;
+      }
+
+      .arrow-small {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+
+    .services-table {
+      max-width: 94rem;
+      max-height: 51rem;
+      overflow-y: auto;
+
+      table {
+        tr {
+          border-bottom: 0.5px solid $gray-alt;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          color: $black;
+
+          th {
+            background-color: $main;
+            color: $white;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            padding: 1.5rem 4rem;
+          }
+
+          td {
+            padding: 1.5rem 4rem;
+            text-align: center;
+          }
+
+          td:first-child {
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+}

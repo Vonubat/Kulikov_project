@@ -1,5 +1,5 @@
-import './styles/normalize.css';
-import './styles/main.scss';
+import './styles/base/normalize.css';
+import './styles/styles.scss';
 import 'bootstrap';
 import Swiper from 'swiper/bundle';
 

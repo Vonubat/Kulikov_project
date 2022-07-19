@@ -1,0 +1,55 @@
+.about {
+  display: flex;
+  align-items: center;
+  gap: calc(100vw / 16);
+  padding-top: 20rem;
+  margin: 0 auto;
+  max-width: 126rem;
+
+  .about-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    max-width: 62rem;
+    max-height: 60.5rem;
+
+    .about-title {
+      width: 15.5rem;
+      height: 7rem;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 5.6rem;
+      line-height: 7rem;
+      color: $main;
+    }
+
+    .about-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: $black;
+    }
+
+    .about-text-icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      color: $black;
+    }
+
+    .about-text-icons img {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .about-img {
+    max-width: 51.3rem;
+    width: calc(100vw / 3.8);
+  }
+}

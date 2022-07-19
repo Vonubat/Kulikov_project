@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/swiper/swiper-bundle.css';
+@import './base/normalize';
+@import './abstracts/variables';
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 10px;
+}
+
+.body {
+  font-family: 'Manrope';
+
+  @import './layout/header';
+  @import './layout/main';
+  @import './layout/footer';
+}
+
+.active {
+  color: $main;
+}

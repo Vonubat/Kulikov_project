@@ -1,0 +1,59 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25rem;
+  margin: 0 auto;
+  gap: 8rem;
+
+  .projects-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 70px;
+    color: $main;
+  }
+
+  .swiper {
+    max-width: 126rem;
+    max-height: 80rem;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      .card-title {
+        .card-name {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 28px;
+          line-height: 100%;
+          letter-spacing: 0.15em;
+          color: $black;
+          text-transform: uppercase;
+        }
+
+        .card-type,
+        .card-square,
+        .card-price {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px;
+          color: $gray-alt;
+          margin-top: 0.5rem;
+          margin-right: 1.5rem;
+        }
+
+        .card-description {
+          font-style: normal;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 25px;
+          color: $black;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
