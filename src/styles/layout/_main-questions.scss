@@ -30,3 +30,20 @@
     color: $white;
   }
 }
+
+@media screen and (max-device-width: 800px) {
+  .questions {
+    padding-top: 14rem;
+    max-width: 30rem;
+    gap: 3.2rem;
+
+    .questions-title {
+      @include typography-800-mobile-v2;
+      white-space: normal;
+    }
+
+    .questions-description {
+      @include typography-400-mobile-v2;
+    }
+  }
+}
