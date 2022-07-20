@@ -46,3 +46,30 @@
     }
   }
 }
+
+@media screen and (max-device-width: 800px) {
+  .steps-work {
+    padding-top: 14rem;
+    max-width: 30rem;
+
+    .steps-work-img {
+      display: none;
+    }
+
+    .steps-work-text {
+      display: flex;
+      flex-direction: column;
+      gap: 5.6rem;
+
+      .steps-work-title {
+        @include typography-800-mobile-v2;
+      }
+
+      .steps-work-description {
+        .step {
+          @include typography-400-mobile-v2;
+        }
+      }
+    }
+  }
+}
