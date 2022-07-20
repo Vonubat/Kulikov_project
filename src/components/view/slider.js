@@ -1,4 +1,4 @@
-import Swiper, { Navigation, Pagination, Autoplay, Br } from 'swiper';
+import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 import load from './../controller/loader';
 
 document.addEventListener('DOMContentLoaded', generateProjects);
