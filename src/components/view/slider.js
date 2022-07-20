@@ -79,7 +79,7 @@ async function generateProjects(event) {
   }
 
   new Swiper('.slider', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     freeMode: true,
     modules: [Navigation, Pagination, Autoplay],
@@ -96,12 +96,11 @@ async function generateProjects(event) {
       disableOnInteraction: false,
     },
     breakpoints: {
-      // // when window width is >= 640px
-      // 640: {
-      //   slidesPerView: 4,
-      //   spaceBetween: 40,
-      // },
-
+      // when window width is >= 300px
+      300: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
       // when window width is >= 800px
       800: {
         slidesPerView: 2,
