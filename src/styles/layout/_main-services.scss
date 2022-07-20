@@ -72,3 +72,60 @@
     }
   }
 }
+
+@media screen and (max-device-width: 800px) {
+  .services {
+    padding-top: 14rem;
+    gap: 5.6rem;
+
+    .services-title {
+      @include typography-800-mobile-v2;
+    }
+
+    .services-container {
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 33rem;
+
+      .services-names {
+        flex-direction: row;
+        gap: 2rem;
+        width: auto;
+        height: 10rem;
+        overflow-x: scroll;
+
+        .type {
+          @include typography-700-mobile;
+        }
+
+        .arrow-small {
+          transform: rotate(90deg);
+        }
+      }
+
+      .services-table {
+        max-height: 60rem;
+        overflow-y: auto;
+
+        table {
+          max-width: 30rem;
+          vertical-align: middle;
+
+          tr {
+            th {
+              @include typography-700-mobile-v2;
+              padding: 2rem 1rem;
+              white-space: normal;
+            }
+
+            td {
+              padding: 2rem 1rem;
+              max-width: 13.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

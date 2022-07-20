@@ -110,6 +110,20 @@
   line-height: 2.7rem;
 }
 
+@mixin typography-700-mobile {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+
+@mixin typography-700-mobile-v2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
 @mixin typography-800 {
   font-style: normal;
   font-weight: 800;
