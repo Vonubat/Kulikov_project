@@ -82,6 +82,7 @@ async function generateProjects(event) {
     slidesPerView: 1,
     spaceBetween: 30,
     freeMode: true,
+    loop: true,
     modules: [Navigation, Pagination, Autoplay],
     navigation: {
       nextEl: '.swiper-button-next',
