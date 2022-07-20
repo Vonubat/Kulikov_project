@@ -28,6 +28,7 @@
       href="./assets/favicons/favicon-180.png"
     />
     <title>РЕМОНТ ПОД КЛЮЧ</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
   <body class="body" id="body">
     <header class="header">
@@ -79,9 +80,95 @@
           предоставить подарки всем новым клиентам – бесплатное осмечивание и
           оценка прораба.
         </span>
-        <button class="btn btn-danger btn-header">Заказать консультацию</button>
+        <button class="btn btn-danger btn-header callback">
+          Заказать консультацию
+        </button>
       </div>
     </header>
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary trigger visually-hidden"
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop"
+      id="trigger"
+    >
+      Launch static backdrop modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Укажите номер телефона и мы перезвоним вам в ближайшее время
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Ваше имя"
+              />
+              <label for="name">Имя</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="phone-number"
+                placeholder="Номер телефона"
+                ,
+              />
+              <label for="phone-number">Номер телефона</label>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="comment"
+                style="height: 100px"
+              ></textarea>
+              <label for="comment">Ваш комментарий</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary exit-modal"
+              data-bs-dismiss="modal"
+              id="exit-modal"
+            >
+              Закрыть
+            </button>
+            <button
+              type="button"
+              class="btn btn-success submit-modal"
+              id="submit-modal"
+            >
+              Отправить
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <nav class="mobile-navigation" id="mobile-navigation">
       <img src="./assets/icons/logo.svg" alt="logo" class="logo" />
@@ -247,7 +334,7 @@
           >Мы с радостью ответим, потому что искренне хотим, чтобы вы жили,
           творили, радовались в красивой обстановке</span
         >
-        <button class="btn btn-outline-danger btn-questions">
+        <button class="btn btn-outline-danger btn-questions callback">
           Заказать консультацию
         </button>
       </div>
