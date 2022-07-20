@@ -73,6 +73,29 @@
   }
 }
 
+@media screen and (max-device-width: 1300px) {
+  .services {
+    .services-container {
+      .services-table {
+        table {
+          max-width: 50rem;
+
+          tr {
+            th {
+              padding: 2rem 1rem;
+              white-space: normal;
+            }
+
+            td {
+              padding: 2rem 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-device-width: 800px) {
   .services {
     padding-top: 14rem;

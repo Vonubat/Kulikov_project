@@ -36,7 +36,7 @@ function sendEmail() {
     Host: 'smtp.elasticemail.com',
     Username: 'Vonubat@gmail.com',
     Password: '10B56AA271CDCD9D8A5C1A0E5801EB49C336',
-    To: 'Vonubat@gmail.com',
+    To: 'atu_k@mail.ru',
     From: 'Vonubat@gmail.com',
     Subject: 'Заказ с магазина',
     Body: `Имя покупателя: ${name.value}<br />

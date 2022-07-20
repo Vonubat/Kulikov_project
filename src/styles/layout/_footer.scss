@@ -29,4 +29,11 @@
       @include messengers;
     }
   }
+  .signature {
+    color: $white;
+    position: relative;
+    bottom: 0rem;
+    @include typography-500;
+    @include links-style;
+  }
 }
