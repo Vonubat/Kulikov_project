@@ -45,3 +45,47 @@
     width: calc(100vw / 3);
   }
 }
+
+@media screen and (max-device-width: 800px) {
+  .about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 14rem;
+    margin: auto;
+    max-width: 30rem;
+
+    .about-text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
+      max-width: 62rem;
+      max-height: 87rem;
+
+      .about-title {
+        width: 10rem;
+        height: 40rem;
+        @include typography-800-mobile-v2;
+      }
+
+      .about-text {
+        margin-top: 5.6rem;
+        @include typography-400-mobile-v2;
+      }
+
+      .about-text-icons {
+        margin-top: 2.4rem;
+        flex-direction: column;
+        gap: 1.6rem;
+      }
+
+      .about-text-icons img {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .about-img {
+      @include visually-hidden;
+    }
+  }
+}
