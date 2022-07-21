@@ -128,7 +128,7 @@
       }
 
       .services-table {
-        max-height: 60rem;
+        max-height: fit-content;
         overflow-y: auto;
 
         table {
