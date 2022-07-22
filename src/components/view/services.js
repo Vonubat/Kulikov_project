@@ -11,12 +11,21 @@ async function generateServices(event) {
   // console.log(event);
   const services = await load('db/services.json');
   let currentType = [];
+
   if (event.type === 'DOMContentLoaded') {
     currentType = services.demolition;
   } else if (event.target.classList.contains('arrow-small')) {
     currentType = services[event.target.parentElement.id];
+    for (const type of types) {
+      type.classList.remove('active-item');
+    }
+    event.target.parentElement.classList.toggle('active-item');
   } else {
     currentType = services[event.target.id];
+    for (const type of types) {
+      type.classList.remove('active-item');
+    }
+    event.target.classList.toggle('active-item');
   }
 
   const currency = await load('https://www.nbrb.by/api/exrates/rates/431');

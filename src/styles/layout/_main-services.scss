@@ -21,7 +21,7 @@
       flex-direction: column;
       gap: 3rem;
       width: 30rem;
-      height: 60rem;
+      max-height: fit-content;
 
       .type {
         @include typography-700-v2;
@@ -40,7 +40,7 @@
     }
 
     .services-table {
-      max-height: 60rem;
+      max-height: fit-content;
       overflow-y: auto;
 
       table {

@@ -31,60 +31,6 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
   <body class="body" id="body">
-    <header class="header">
-      <div class="header-menu-container" id="header-menu-container">
-        <img src="./assets/icons/logo.svg" alt="logo" class="logo" />
-        <nav class="navigation" id="navigation">
-          <div class="connection-container" id="connection-container">
-            <div class="messengers">
-              <a href="https://www.instagram.com/artur_kul/" target="_blank"
-                ><img
-                  src="./assets/icons/instagram.svg"
-                  alt="instagram"
-                  class="instagram"
-              /></a>
-              <a href="https://telegram.me/artur_kulikov" target="_blank"
-                ><img
-                  src="./assets/icons/telegram.svg"
-                  alt="telegram"
-                  class="telegram"
-              /></a>
-              <a href="viber://chat/?number=375447628863" target="_blank"
-                ><img src="./assets/icons/viber.svg" alt="viber" class="viber"
-              /></a>
-            </div>
-            <div class="contacts">
-              <a href="tel:123-456-7890">+ 375 (44) 762 88 63</a>
-              <a href="mailto: atu_k_mail.ru">atu_k@mail.ru</a>
-            </div>
-          </div>
-          <div class="menu">
-            <a href="#body">Главная</a>
-            <a href="#about">О нас</a>
-            <a href="#services">Услуги и цены</a>
-            <a href="#projects">Проекты</a>
-            <a href="#footer">Контакты</a>
-          </div>
-        </nav>
-        <img
-          src="./assets/icons/burger.svg"
-          alt="burger-menu"
-          class="burger-menu"
-          id="burger-menu"
-        />
-      </div>
-      <div class="header-text-container">
-        <h1 class="header-main-text">РЕМОНТ ПОД КЛЮЧ</h1>
-        <span class="header-description-text">
-          Мы гарантируем положительные эмоции от сотрудничества и готовы
-          предоставить подарки всем новым клиентам – бесплатное осмечивание и
-          оценка прораба.
-        </span>
-        <button class="btn btn-danger btn-header callback">
-          Заказать консультацию
-        </button>
-      </div>
-    </header>
     <!-- Button trigger modal -->
     <button
       type="button"
@@ -169,7 +115,60 @@
         </div>
       </div>
     </div>
-
+    <header class="header">
+      <div class="header-menu-container" id="header-menu-container">
+        <img src="./assets/icons/logo.svg" alt="logo" class="logo" />
+        <nav class="navigation" id="navigation">
+          <div class="connection-container" id="connection-container">
+            <div class="messengers">
+              <a href="https://www.instagram.com/artur_kul/" target="_blank"
+                ><img
+                  src="./assets/icons/instagram.svg"
+                  alt="instagram"
+                  class="instagram"
+              /></a>
+              <a href="https://telegram.me/artur_kulikov" target="_blank"
+                ><img
+                  src="./assets/icons/telegram.svg"
+                  alt="telegram"
+                  class="telegram"
+              /></a>
+              <a href="viber://chat/?number=375447628863" target="_blank"
+                ><img src="./assets/icons/viber.svg" alt="viber" class="viber"
+              /></a>
+            </div>
+            <div class="contacts">
+              <a href="tel:123-456-7890">+ 375 (44) 762 88 63</a>
+              <a href="mailto: atu_k_mail.ru">atu_k@mail.ru</a>
+            </div>
+          </div>
+          <div class="menu">
+            <a href="#body">Главная</a>
+            <a href="#about-text-container">О нас</a>
+            <a href="#services-title">Услуги и цены</a>
+            <a href="#projects-title">Проекты</a>
+            <a href="#footer">Контакты</a>
+          </div>
+        </nav>
+        <img
+          src="./assets/icons/burger.svg"
+          alt="burger-menu"
+          class="burger-menu"
+          id="burger-menu"
+        />
+      </div>
+      <div class="header-text-container">
+        <h1 class="header-main-text">РЕМОНТ ПОД КЛЮЧ</h1>
+        <span class="header-description-text">
+          Мы гарантируем положительные эмоции от сотрудничества и готовы
+          предоставить подарки всем новым клиентам – бесплатное осмечивание и
+          оценка прораба.
+        </span>
+        <button class="btn btn-danger btn-header callback">
+          Заказать консультацию
+        </button>
+      </div>
+    </header>
     <nav class="mobile-navigation" id="mobile-navigation">
       <img src="./assets/icons/logo.svg" alt="logo" class="logo" />
       <img
@@ -180,9 +179,9 @@
       />
       <div class="mobile-menu">
         <a href="#body">Главная</a>
-        <a href="#about">О нас</a>
-        <a href="#services">Услуги и цены</a>
-        <a href="#projects">Проекты</a>
+        <a href="#about-text-container">О нас</a>
+        <a href="#services-title">Услуги и цены</a>
+        <a href="#projects-title">Проекты</a>
         <a href="#footer">Контакты</a>
       </div>
       <div class="mobile-contacts">
@@ -209,8 +208,8 @@
     </nav>
 
     <section class="main">
-      <div class="about" id="about">
-        <div class="about-text-container">
+      <div class="about">
+        <div class="about-text-container" id="about-text-container">
           <span class="about-title">О нас</span>
           <span class="about-text"
             >Более 15 лет мы занимаемся ремонтом и внутренней отделкой квартир,
@@ -248,11 +247,11 @@
         <img src="./assets/about-us.png" alt="about-us" class="about-img" />
       </div>
 
-      <div class="services" id="services">
-        <span class="services-title">Услуги и цены</span>
+      <div class="services">
+        <span class="services-title" id="services-title">Услуги и цены</span>
         <div class="services-container">
           <div class="services-names">
-            <div class="demolition type" id="demolition">
+            <div class="demolition type active-item" id="demolition">
               Демонтажные <br />
               работы
               <img
@@ -393,7 +392,7 @@
       </div>
 
       <div class="projects" id="projects">
-        <div class="projects-title">Проекты</div>
+        <div class="projects-title" id="projects-title">Проекты</div>
         <!-- Swiper slider -->
       </div>
     </section>
