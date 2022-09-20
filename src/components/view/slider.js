@@ -4,10 +4,7 @@ import load from './../controller/loader';
 document.addEventListener('DOMContentLoaded', generateProjects);
 
 async function generateProjects(event) {
-  // console.log(event);
-  console.log('Текущая прокрутка сверху: ' + window.pageYOffset);
   const projects = (await load('db/projects.json')).projects;
-  console.log(projects);
   const currency = await load('https://www.nbrb.by/api/exrates/rates/431');
 
   const divProjects = document.getElementById('projects');

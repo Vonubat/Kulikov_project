@@ -8,7 +8,6 @@ for (const type of types) {
 }
 
 async function generateServices(event) {
-  // console.log(event);
   const services = await load('db/services.json');
   let currentType = [];
 
